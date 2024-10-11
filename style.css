@@ -1,25 +1,25 @@
-        body {
-            background-image: url('https://cdn3.f-cdn.com/contestentries/1489974/18545046/5cba2aba229c4_thumb900.jpg');
-            /* Replace with your game store image URL */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: black;
-        }
+body {
+    background-image: url('https://cdn3.f-cdn.com/contestentries/1489974/18545046/5cba2aba229c4_thumb900.jpg');
+    /* Replace with your game store image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
 
-        header {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-        }
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
 
-        .btn-warning {
-            background-color: #ffc107;
-            color: black;
-        }
+.btn-warning {
+    background-color: #ffc107;
+    color: black;
+}
 
-        /* Additional styles for readability */
-        .container {
-            background-color: rgba(20, 19, 19, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-        }
+/* Additional styles for readability */
+.container {
+    background-color: rgba(20, 19, 19, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
