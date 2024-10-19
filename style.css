@@ -6,38 +6,81 @@ body {
     color: white;
 }
 
-/* Header styles */
-header {
-    background-color: white;
-    padding: 20px;
+/* Navbar starts */
+.navbar {
+    background-color: #E9F8F9;
+    height: 60px;
+    margin: 20px;
+    border-radius: 12px;
+    padding: 4px 12px;
 }
 
-/* Button styles */
-.btn-warning {
-    background-color: #ffc107;
-    color: black;
+.navbar-brand {
+    font-weight: 500 !important;
+    color: #387478 !important;
+    font-size: 20px !important;
+    transition: 0.3s color !important;
+    font-family: 'Lucida Sans';
 }
 
-/* Make all fonts white */
-
-h1 {
-    color: white;
+.navbar-brand:hover {
+    color: #629584 !important;
 }
 
-/* Container readability styles */
-.container {
-    background-color: rgba(20, 19, 19, 0.8);
-    padding: 20px;
-    border-radius: 10px;
+.login-button {
+    background-color: #387478;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 16px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    border: none !important;
 }
 
-/* Form input field styles */
-.form-control {
-    color: black;
-    /* Input text color should stay black for readability */
+.login-button:hover {
+    background-color: #629584;
 }
 
-/* Modify button text color */
-.btn {
-    color: white;
+.navbar-toggler {
+    border: none !important;
+    font-size: 16px;
+    padding: 6px 8px;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none !important;
+}
+
+.nav-link {
+    color: #666777 !important;
+    font-weight: 500;
+    font-size: 14px !important;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000 !important;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .container h3 {
+    font-size: 45px;
+    color: #E2F1E7;
+    font-family: "Lucida Calligraphy", cursive;
+    margin: 0;
+}
+
+.navbar .container p {
+    font-size: 16px;
+    color: #fff;
+    padding: 16px 0;
+    line-height: 1.5;
+    margin: 0;
 }
