@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://cdn3.f-cdn.com/contestentries/1489974/18545046/5cba2aba229c4_thumb900.jpg');
+    background-image: url('');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -8,7 +8,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: white;
     padding: 20px;
 }
 
@@ -19,16 +19,8 @@ header {
 }
 
 /* Make all fonts white */
-body,
-h1,
-h2,
-p,
-a,
-li,
-label,
-small,
-form,
-input {
+
+h1 {
     color: white;
 }
 
