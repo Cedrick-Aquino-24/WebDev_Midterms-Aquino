@@ -74,7 +74,7 @@
             <p>"Designed for Protection, Built for Comfort Avail Yours Today!"</p>
             <div class="button-container">
                 <button type="button" class="btn me-2" style="background-color: #2460A7FF; color: white;"
-                    onclick="location.href='#products';">Buy Now</button>
+                    onclick="location.href='#merchandise';">Buy Now</button>
             </div>
         </div>
     </section>
@@ -130,6 +130,86 @@
             </div>
         </div>
     </div>
+    <!-- End of Login Section -->
+
+    <!-- Modal for Sign Up -->
+    <div class="modal fade" id="modalSignup" tabindex="-1" aria-labelledby="modalSignupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <h1 class="fw-bold mb-0 fs-2" id="modalSignupLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5 pt-0">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control rounded-3" id="fullName" placeholder="Full Name"
+                                required>
+                            <label for="fullName">Full Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-3" id="signupEmail"
+                                placeholder="name@example.com" required>
+                            <label for="signupEmail">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-3" id="signupPassword"
+                                placeholder="Password" required>
+                            <label for="signupPassword">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-3" id="confirmPassword"
+                                placeholder="Confirm Password" required>
+                            <label for="confirmPassword">Confirm Password</label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="termsConditions" required>
+                            <label class="form-check-label" for="termsConditions">I agree to the <a href="#">Terms and
+                                    Conditions</a></label>
+                        </div>
+
+                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="button" data-bs-toggle="modal"
+                            data-bs-target="#modalSignin" data-bs-dismiss="modal">Sign Up</button>
+                    </form>
+                    <div class="text-center mt-2">
+                        <p><span class="gray-text">Already have an account?</span>
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal"
+                                data-bs-target="#modalSignin" data-bs-dismiss="modal">Sign In</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End for Modal SignUp -->
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="pro-container">
+            <div class="heading1">About Us</div>
+        </div>
+
+        <div class="container">
+            <section id="about-id">
+                <div class="about-image">
+                    <img src="images/pic1.jpeg">
+                </div>
+                <div class="about-content">
+                    <h2>ShieldUp Helmet Shop</h2>
+                    <p>Welcome to Luxura, your go-to destination for elegant and stylish sala sets. We believe that
+                        your living space should reflect your unique taste and lifestyle. At Luxura, we offer a curated
+                        selection of high-quality sala sets that blend comfort with sophistication.</p>
+                    <br>
+                    <p>Whether you’re looking to create a cozy gathering space or a statement piece for your home, our
+                        diverse range has something for everyone. Discover the perfect sala set to elevate your living
+                        experience at Luxura.
+                    </p>
+                    <a href="" class="read-more">Read More</a>
+                </div>
+            </section>
+            <!-- About Us section Ends -->
+
 
 </body>
 

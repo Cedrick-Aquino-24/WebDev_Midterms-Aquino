@@ -1,4 +1,4 @@
-/* Navbar starts */
+/* Header/Navbar Section */
 .navbar {
     background-color: #B3C7D6FF;
     height: 60px;
@@ -78,7 +78,7 @@
 
 /* Home section */
 #home {
-    background: url('https://static.vecteezy.com/system/resources/previews/023/835/692/original/characters-riding-motorcycles-and-scooters-motorbike-riders-men-and-women-driving-motorcycles-delivery-man-on-scooter-set-vector.jpg') no-repeat center center;
+    background: url('https://t3.ftcdn.net/jpg/05/10/88/00/360_F_510880054_Jh030bk5dviAaGNdWhS4OpsBv5udtzvw.jpg') no-repeat center center;
     background-size: cover;
     width: 100%;
     min-height: 100vh;
@@ -108,8 +108,8 @@
 
 .container h3 {
     font-size: 45px;
-    color: #E2F1E7;
-    font-family: "Lucida Calligraphy", cursive;
+    color: #D9B48FFF;
+    font-family: 'Trebuchet MS';
     margin: 0;
 }
 
@@ -167,5 +167,200 @@
     .nav-link.active::before {
         width: 100%;
         visibility: visible;
+    }
+}
+
+/* Modal Signin starts */
+#modalSignin .btn-primary,
+#modalSignup .btn-primary {
+    background-color: #387478 !important;
+    border-color: #387478 !important;
+}
+
+#modalSignin .btn-primary:hover,
+#modalSignup .btn-primary:hover {
+    background-color: #629584 !important;
+    border-color: #629584 !important;
+}
+
+#modalSignin .btn-outline-secondary,
+#modalSignup .btn-outline-secondary,
+#modalSignin .btn-outline-primary,
+#modalSignup .btn-outline-primary {
+    color: #387478 !important;
+    border-color: #387478 !important;
+}
+
+#modalSignin .form-control,
+#modalSignup .form-control {
+    font-size: 12px;
+    padding: 8px;
+    height: auto;
+}
+
+#modalSignin label,
+#modalSignup label {
+    font-size: 12px;
+}
+
+#modalSignin .btn,
+#modalSignup .btn {
+    font-size: 12px;
+    padding: 8px 16px;
+}
+
+#modalSignin .form-check-label,
+#modalSignup .form-check-label {
+    font-size: 12px;
+}
+
+#modalSignin .btn-outline-secondary:hover,
+#modalSignin .btn-outline-primary:hover {
+    background-color: #E2F1E7;
+    color: #000;
+}
+
+/* modal for signup */
+#modalSignup .modal-header,
+#modalSignup .modal-body {
+    padding: 32px;
+}
+
+/* about us section */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto, sans-serif; 
+
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading1 {
+    text-align: center;
+    padding-top: 95px;
+    font-size: 30px;
+    color: #629584;
+    font-weight: bold;
+    border-bottom: 2px solid #629584;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.heading p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+#about-id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    padding-top: -50px;
+}
+
+.about-image img {
+    max-width: 85%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Lucida Sans';
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    text-align: justify;
+}
+
+.about-content .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+    background-color: #387478;
+    font-family: 'Lucida Sans';
+}
+
+.about-content .read-more:hover {
+    background-color: #629584;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        padding: 0px 10px;
+    }
+
+    .heading p {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    .box-container {
+        padding: 0px;
+    }
+
+    #about-id {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 250px;
+        height: 150px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0%;
+    }
+
+    .about-content p {
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .about-content .read-more {
+        font-size: 16px;
     }
 }
