@@ -10,49 +10,127 @@
 </head>
 
 <body>
-    <section>
-        <!-- Navbar start -->
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand me-auto" href="#">HeadGuard</a>
-                <div class="evo-first evo-end" tabindex="-1" id="evoNavbar" aria-labelledby="evoNavbarLabel">
-                    <div class="evo-header">
-                        <h5 class="evo-title" id="evoNavbarLabel">HeadGuard</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="evo" aria-label="Close"></button>
-                    </div>
-                    <div class="evo-body">
-                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2 active" aria-current="page" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#about">About</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#products">Products</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#reviews">Reviews</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#contacts">Contacts</a>
-                            </li>
-                        </ul>
-                    </div>
+    <!--Navbar Section / Header of Website-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Logo Image -->
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <img src="https://static.vecteezy.com/system/resources/previews/009/384/214/non_2x/motorcycle-helmet-clipart-design-illustration-free-png.png"
+                    alt="ShieldUp Logo" height="40" class="me-2"> </a>
+            <a class="navbar-brand me-auto" href="#">ShieldUp</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
-                <button class="login-button" type="button" class="btn btn-link" data-bs-toggle="modal"
-                    data-bs-target="#modalSignin" data-bs-dismiss="modal">Login</button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="evo" data-bs-target="#evoNavbar"
-                    aria-controls="evoNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <!-- Menu/Options -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#merchandise">Merchandise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#feedback">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </nav>
+            <!-- Login button Function -->
+            <button class="login-button" type="button" class="btn btn-link" data-bs-toggle="modal"
+                data-bs-target="#modalSignin" data-bs-dismiss="modal">Login</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span> </button>
+        </div>
+    </nav>
+
+    <script>
+        document.querySelectorAll('.nav-link').forEach(item => {
+            item.addEventListener('click', function () {
+                const offcanvas = document.getElementById('offcanvasNavbar');
+                const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+                if (offcanvasInstance) {
+                    offcanvasInstance.hide();
+                }
+            });
+        });
+    </script>
+    <!-- End of Navbar Section -->
+
+    <!-- Home Section -->
+    <section id="home page">
+        <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+            <h3>Welcome to ShieldUp! </h3>
+            <p>"Designed for Protection, Built for Comfort Avail Yours Today!"</p>
+            <div class="button-container">
+                <button type="button" class="btn me-2" style="background-color: #2460A7FF; color: white;"
+                    onclick="location.href='#products';">Buy Now</button>
+            </div>
+        </div>
     </section>
+    <!-- End of Home Section -->
+
+    <!-- Login Section -->
+    <div class="modal fade" id="modalSignin" tabindex="-1" aria-labelledby="modalSigninLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <h1 class="fw-bold mb-0 fs-2" id="modalSigninLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5 pt-0">
+                    <form action="index.html">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-3" id="floatingInput"
+                                placeholder="name@example.com" required>
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                placeholder="Password" required>
+                            <label for="floatingPassword">Password</label>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                            <a href="#" class="text-decoration-none">Forgot password?</a>
+                        </div>
+
+                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Login</button>
+
+                        <hr class="my-4">
+                        <h2 class="fs-5 fw-bold mb-3">Social Sign-In Options</h2>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="button">Sign In with
+                            Google</button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="button">Sign In with
+                            Facebook</button>
+
+                        <!-- Sign Up prompt -->
+                        <div class="text-center mt-2">
+                            <p><span class="gray-text">Don't have an account?</span>
+                                <button type="button" class="btn btn-link" data-bs-toggle="modal"
+                                    data-bs-target="#modalSignup" data-bs-dismiss="modal">Sign Up</button>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

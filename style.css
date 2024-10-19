@@ -1,14 +1,6 @@
-body {
-    background-image: url('');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-}
-
 /* Navbar starts */
 .navbar {
-    background-color: #E9F8F9;
+    background-color: #B3C7D6FF;
     height: 60px;
     margin: 20px;
     border-radius: 12px;
@@ -16,19 +8,19 @@ body {
 }
 
 .navbar-brand {
+    font-family: 'Trebuchet MS';
     font-weight: 500 !important;
-    color: #387478 !important;
+    color: #2460A7FF !important;
     font-size: 20px !important;
     transition: 0.3s color !important;
-    font-family: 'Lucida Sans';
 }
 
 .navbar-brand:hover {
-    color: #629584 !important;
+    color: #D9B48FFF !important;
 }
 
 .login-button {
-    background-color: #387478;
+    background-color: #85B3D1FF;
     color: #fff;
     font-size: 12px;
     padding: 6px 16px;
@@ -39,7 +31,7 @@ body {
 }
 
 .login-button:hover {
-    background-color: #629584;
+    background-color: #D9B48FFF;
 }
 
 .navbar-toggler {
@@ -73,7 +65,6 @@ body {
 .navbar .container h3 {
     font-size: 45px;
     color: #E2F1E7;
-    font-family: "Lucida Calligraphy", cursive;
     margin: 0;
 }
 
@@ -83,4 +74,98 @@ body {
     padding: 16px 0;
     line-height: 1.5;
     margin: 0;
+}
+
+/* Home section */
+#home {
+    background: url('https://static.vecteezy.com/system/resources/previews/023/835/692/original/characters-riding-motorcycles-and-scooters-motorbike-riders-men-and-women-driving-motorcycles-delivery-man-on-scooter-set-vector.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#home .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.container h3 {
+    font-size: 45px;
+    color: #E2F1E7;
+    font-family: "Lucida Calligraphy", cursive;
+    margin: 0;
+}
+
+.container p {
+    font-size: 16px;
+    color: #fff;
+    padding: 16px 0;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.offcanvas.offcanvas-end {
+    width: 250px !important;
+}
+
+.offcanvas-title {
+    color: #387478;
+}
+
+@media (max-width: 768px) {
+    #home h3 {
+        font-size: 30px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    #home h3 {
+        font-size: 25px;
+    }
+
+    #home p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: #387478;
+        visibility: hidden;
+        transition: width 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
 }
