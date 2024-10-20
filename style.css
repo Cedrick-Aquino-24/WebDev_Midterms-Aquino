@@ -420,3 +420,35 @@ html {
 .merchandise .box img:hover {
     transform: scale(1.2);
 }
+
+
+.scroll-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.scroll-link:hover {
+    background-color: #005f7f;
+}
+
+#contacts-section {
+    padding: 50px;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+}
+
+#contacts-section {
+    color: black;
+    padding: 50px;
+}
+
+#contacts-section h1,
+#contacts-section p {
+    color: black;
+}
