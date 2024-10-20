@@ -22,7 +22,7 @@ body {
     font-weight: 500 !important;
     color: #2460A7FF !important;
     font-size: 20px !important;
-    transition: 0.3s color !important;
+    transition: 0.5s color !important;
 }
 
 .navbar-brand:hover {
@@ -135,7 +135,7 @@ body {
 }
 
 .offcanvas-title {
-    color: #387478;
+    color: #85B3D1FF;
 }
 
 @media (max-width: 768px) {
